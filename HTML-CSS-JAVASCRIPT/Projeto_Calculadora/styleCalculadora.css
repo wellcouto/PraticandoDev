@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+#calcular{
+    width:  400px;
+    padding: 0.5em;
+    background-color: #c4c4c4 ;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+#calcular h3{
+    font-size: 0.8em;
+    font-weight: 300;
+    color: #666;
+}
+
+#operacao{
+    text-align: right;
+}
+
+#operacao-anterior, #operacao-atual{
+    min-height: 1.6em;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+}
+
+#operacao-anterior{
+    color: #777;
+    font-size: 1.5em;
+}
+
+#operacao-atual{ 
+    font-size: 3em;
+    font-weight: 700;
+}
+
+#container-de-botoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+#container-de-botoes button{
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #4ea2f0;
+    cursor: pointer;
+}
+
+#container-de-botoes .numero{
+    background-color: #f3f3f3;
+}
+
+#container-de-botoes button:hover{
+    background-color: #bababa;
+    border-color: #999;
+}
+
+#container-de-botoes #botao-igual{
+    grid-column: span 2;
+    background-color: #75a5cb;
+}
+
+#container-de-botoes #botao-igual:hover{
+    background-color: #3a91d8;
+}
