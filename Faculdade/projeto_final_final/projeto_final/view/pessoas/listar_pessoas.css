@@ -1,0 +1,231 @@
+@import '../css/global.css';
+@import '../css/button.css';
+@import '../css/header.css';
+
+a {
+    font-size: 2rem !important;
+    color: gray !important;
+}
+
+.back{
+    font-size: 2.5rem !important;
+    color:white !important;
+    text-decoration: none !important;
+}
+.logo {
+    width: 6rem !important;
+}
+
+.title {
+    text-align: center !important;
+    width: 100% !important;
+}
+
+
+nav {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 2rem !important;
+}
+
+.containerPage {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    position: relative !important;
+}
+
+.itens {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 4rem !important;
+
+}
+
+main {
+    width: 100% !important;
+    gap: 3rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 3rem !important;
+}
+
+h1 {
+    font-weight: 400 !important;
+    font-size: 4rem !important;
+}
+
+.desktopMenu {
+    display: flex !important;
+    gap: 2rem !important;
+}
+
+.desktopMenu>a {
+    font-size: 2rem !important;
+    transition: all .1s ease, transform .3s ease-in-out !important;
+}
+
+.desktopMenu>a:hover {
+    color: var(--black) !important;
+    transform: scale(1.1) !important;
+}
+
+
+
+@media screen and (min-width:768px) {
+
+    .itens {
+        display: grid !important;
+        justify-content: flex-start !important;
+        align-content: center !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+@media screen and (max-width:768px) {
+    .infoTextContainer{
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .itens {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+
+@media screen and (min-width:1440px) {
+    .logo {
+        width: 9rem !important;
+    }
+
+    .itens {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+
+    .desktopMenu>a {
+        font-size: 3rem !important;
+    }
+}
+
+
+
+@media screen and (min-width:1920px) {
+    .logo {
+        width: 9rem !important;
+    }
+
+    .itens {
+        grid-template-columns: repeat(5, 1fr) !important;
+    }
+
+    .desktopMenu>a {
+        font-size: 2.5rem !important;
+    }
+}
+
+
+@media screen and (max-width:1920px) {
+    .logo {
+        width: 9rem !important;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .desktopIcon {
+        width: 3rem !important;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .itens {
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+    }
+
+    header {
+        justify-content: space-around !important;
+    }
+}
+
+
+
+
+
+
+.icon {
+    cursor: pointer !important;
+    transition: .2s ease-in-out !important;
+}
+
+.icon:hover {
+    transform: scale(1.1) !important;
+
+}
+
+
+
+
+
+.title {
+    text-align: center !important;
+    width: 100% !important;
+}
+
+
+
+.containerItem {
+    display: flex;
+    width: 40%;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: 1px solid var(--gray) !important;
+    padding: 2rem !important;
+    border-radius: .5rem !important;
+    gap: 1rem !important;
+}
+
+
+
+.text {
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+}
+
+h2 {
+    font-weight: 200 !important;
+    font-size: 3.5rem !important;
+
+}
+
+h3 {
+    font-weight: 200 !important;
+    font-size: 2.7rem !important;
+    color: var(--gray) !important;
+}
+
+.buttons {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    gap: 2rem;
+    align-items: center !important;
+}
+
+.info {
+    font-size: 3.5rem;
+}
+.infoTextContainer{
+    width: 100%;
+}

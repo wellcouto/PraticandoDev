@@ -1,0 +1,8 @@
+header {
+    padding: 1.5rem !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    overflow-x: hidden !important;
+}

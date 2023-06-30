@@ -1,0 +1,18 @@
+.button {
+    padding: .5rem 1.5rem;
+    font-size: 2.5rem;
+    background-color: rgb(34, 69, 100);
+    color: white;
+    border: 0;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    width: auto;
+    text-align: center !important;
+}
+
+
+.button:hover {
+    transform: scale(1.2)
+}
+

@@ -1,0 +1,176 @@
+@import '../css/global.css';
+@import '../css/button.css';
+
+
+
+.containerPage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 3rem;
+}
+
+.tit{
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.form{
+    display: flex;
+    width: 30%;
+    min-width: 300px;
+    height: 80%;
+    min-width: 350px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    background-image:linear-gradient(rgb(255, 255, 255), rgb(209, 90, 225));
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.logo{
+    width: 13rem;
+}
+.endereco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 100%;
+}
+select{
+    width: 85%;
+    font-size: 2.3rem;
+    cursor: pointer;
+
+}
+.divBtn{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 10px;
+}
+
+.btnConfirmar {
+    padding: .5rem 1.5rem;
+    font-size: 2.5rem;
+    background-color: rgb(34, 69, 100);
+    color: white;
+    border: 0;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    width: auto;
+    text-align: center !important;
+    margin-bottom: 15px;
+    
+}
+
+.btnVoltar {
+    padding: .5rem 1.5rem;
+    font-size: 2.5rem;
+    background-color: rgb(34, 69, 100);
+    color: white;
+    border: 0;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    width: auto;
+    text-align: center !important;
+    margin-bottom: 15px;
+    
+}
+
+.back{
+    font-size: 2.5rem;
+    color:white;
+    text-decoration: none;
+}
+
+@media screen and (min-width:768px) {
+    .endereco{
+        flex-direction: row;
+        width: 85%;
+    }
+}
+
+
+.link{
+    color:white;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-column {
+    flex-basis: 90%;
+    margin-left: 5px; 
+  }
+  
+  .containerInput {
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+  }
+  
+
+
+input{
+    width: 100%;
+    height:100%;
+    height: 3.8rem;
+    font-size: 2.3rem;
+    border-radius: 10px;
+    padding-left: 15px;
+    border: 1px solid rgb(34, 69, 100)
+}
+input::placeholder{
+    font-weight: 400;
+    color: var(--gray);
+}
+.errorMessage{
+    font-size:1.8rem;
+}
+.containerInput{
+    width:95%;
+    margin-top: 5px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    border-radius: 10px;
+}
+
+.inputEndereco {
+    width:75%;
+    margin-bottom: 40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    border-radius: 10px;
+}
+
+.containerpriInput{
+    width:95%;
+    margin-top: 25px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    border-radius: 10px;
+}
+
+@media screen and (min-width:1044px){
+    .input{
+        height: 4rem;
+    }
+}
